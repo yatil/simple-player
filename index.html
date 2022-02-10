@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Player</title>
+  <link rel="stylesheet" href="player-dist.css">
+  <script src="player-dist.js" async></script>
+</head>
+<body>
+  <h1>The Simple Media Player</h1>
+  <simple-player>
+    <video controls src="demo-files/video.mp4">
+      <track default
+       kind="captions"
+       srclang="en"
+       label="English"
+       src="demo-files/captions.vtt" />
+    </video>
+  </simple-player>
+</body>
+</html>

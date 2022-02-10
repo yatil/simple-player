@@ -1,0 +1,813 @@
+1
+00:00:00,179 --> 00:00:01,209
+Hello!
+
+2
+00:00:01,209 --> 00:00:05,629
+In this episode, I’ll explain the structure
+to the Web Content Accessibility Guidelines
+
+3
+00:00:05,629 --> 00:00:13,940
+— WCAG — and how you can start following
+their requirements.
+
+4
+00:00:13,940 --> 00:00:18,330
+My name is Eric Eggert and I work in Web Accessibility
+for over 10 years.
+
+5
+00:00:18,330 --> 00:00:24,360
+You can follow me as @yatil – Y - A - T - I - L – on social media.
+
+6
+00:00:24,360 --> 00:00:26,300
+Now, what is WCAG?
+
+7
+00:00:26,300 --> 00:00:30,980
+The Web Content Accessibility Guidelines are a set of principles, guidelines and
+
+8
+00:00:31,080 --> 00:00:36,360
+success criteria that lead you to accessible web content.
+
+9
+00:00:36,360 --> 00:00:42,500
+They are a web standard published by W3C,
+the World Wide Web Consortium, and with every
+
+10
+00:00:42,500 --> 00:00:49,680
+web standard the assumption is that web content
+creators adopt it into their practices.
+
+11
+00:00:49,700 --> 00:00:56,980
+Version 1 was published in 1999, so over 20
+years ago, and Version 2 in 2008.
+
+12
+00:00:56,980 --> 00:01:02,580
+It was refreshed in 2018 with WCAG 2.1, which is the current version.
+
+13
+00:01:02,580 --> 00:01:07,140
+What’s the difference between WCAG versions,
+you ask?
+
+14
+00:01:07,159 --> 00:01:13,140
+Version 2.0 was a complete rewrite with new
+principles and a new structure.
+
+15
+00:01:13,140 --> 00:01:19,229
+It completely replaced WCAG 1.0 which was
+technically not holding up anymore.
+
+16
+00:01:19,229 --> 00:01:23,180
+WCAG 2.0 is agnostic to technology, which gave
+
+17
+00:01:23,180 --> 00:01:27,740
+it a longer shelf-life out of the box.
+
+18
+00:01:27,740 --> 00:01:31,400
+And it is the basis for accessibility today.
+
+19
+00:01:31,400 --> 00:01:39,440
+2.1 expanded on WCAG 2.0 by adding new criteria
+but without removing or changing any of the
+
+20
+00:01:39,440 --> 00:01:41,740
+existing 2.0 guidelines.
+
+21
+00:01:41,740 --> 00:01:47,780
+Think of 2.1 as an extension of WCAG 2.0.
+
+22
+00:01:47,780 --> 00:01:54,880
+WCAG 2.2, which is supposed to be coming out
+soon, basically does the same thing with probably
+
+23
+00:01:54,880 --> 00:01:56,740
+one exception.
+
+24
+00:01:56,740 --> 00:02:02,409
+Subscribe to this channel and click the bell
+icon to get notified about new videos, including
+
+25
+00:02:02,409 --> 00:02:07,520
+a WCAG 2.2 introduction once it is ready.
+
+26
+00:02:07,520 --> 00:02:12,600
+When I talk about WCAG in the future, you
+can always assume WCAG 2 and I will say the
+
+27
+00:02:12,600 --> 00:02:15,520
+specific version number when that’s necessary.
+
+28
+00:02:15,520 --> 00:02:23,840
+That also means that if you conform to WCAG
+2.1, you automatically conform to WCAG 2.0.
+
+29
+00:02:23,849 --> 00:02:25,129
+How neat!
+
+30
+00:02:25,129 --> 00:02:28,700
+More about conformance in a bit.
+
+31
+00:02:28,700 --> 00:02:32,329
+Let's talk about the structure of WCAG 2.
+
+32
+00:02:32,329 --> 00:02:37,880
+The main — normative — WCAG document has
+three levels of guidance:
+
+33
+00:02:37,880 --> 00:02:41,520
+The first level is Principles.
+
+34
+00:02:41,520 --> 00:02:44,880
+Principles are basic qualities that every website needs to
+
+35
+00:02:44,880 --> 00:02:48,280
+have when it comes to accessibility.
+
+36
+00:02:48,300 --> 00:02:49,719
+2. Guidelines
+
+37
+00:02:49,720 --> 00:02:53,480
+Follow the guidelines when planning and designing
+
+38
+00:02:53,480 --> 00:02:59,180
+your website and application to make sure
+you’re right on track.
+
+39
+00:02:59,220 --> 00:03:01,100
+3. Success Criteria
+
+40
+00:03:01,100 --> 00:03:04,819
+Verify your work by using success criteria
+
+41
+00:03:04,819 --> 00:03:10,029
+to see if you have been successful following
+the guidelines and principles.
+
+42
+00:03:10,029 --> 00:03:15,609
+Sidebar: Normative information is information
+that is the confirmed standard as published
+
+43
+00:03:15,609 --> 00:03:22,780
+by the W3C and not additional explaining information, which the W3C also publishes.
+
+44
+00:03:22,780 --> 00:03:26,140
+Let’s take a closer look at the Principles.
+
+45
+00:03:26,140 --> 00:03:31,500
+On the first level, four high-level principles
+are defined, that you have to keep on your mind.
+
+46
+00:03:31,600 --> 00:03:34,120
+The first one is “Perceivable”.
+
+47
+00:03:34,120 --> 00:03:41,520
+Information and user interface components
+must be presentable to users in ways they can perceive.
+
+48
+00:03:41,520 --> 00:03:47,999
+This principle makes sure that disabled people
+can see the content or have alternatives available
+
+49
+00:03:47,999 --> 00:03:49,760
+in case they need them.
+
+50
+00:03:49,760 --> 00:03:55,049
+It covers making images perceivable through
+alternative text and videos through captions
+
+51
+00:03:55,049 --> 00:03:57,900
+and audio descriptions.
+
+52
+00:03:58,020 --> 00:04:00,239
+2.Operable
+
+53
+00:04:00,239 --> 00:04:05,159
+User interface components and navigation must
+be operable.
+
+54
+00:04:05,159 --> 00:04:12,419
+This principle allows users to use their preferred
+technology to operate the website or web application,
+
+55
+00:04:12,419 --> 00:04:17,939
+for example many users can’t use a mouse,
+either because they are using a screen reader
+
+56
+00:04:17,939 --> 00:04:22,389
+or a refreshable braille display to interact
+with a website.
+
+57
+00:04:22,389 --> 00:04:28,590
+Others might have repetitive strain injury
+(RSI) and just be temporally unable to use
+
+58
+00:04:28,590 --> 00:04:31,440
+a pointing device.
+
+59
+00:04:31,560 --> 00:04:33,540
+3. Understandable
+
+60
+00:04:33,540 --> 00:04:39,880
+Information and the operation of user interface
+must be understandable.
+
+61
+00:04:39,889 --> 00:04:45,020
+This principle is a combination of making
+sure that the content is easy to understand
+
+62
+00:04:45,030 --> 00:04:50,390
+and that you can interact with the website
+or application in an understandable way.
+
+63
+00:04:50,390 --> 00:04:55,840
+For example, this principle covers specifying
+the language of the page and parts of text
+
+64
+00:04:55,840 --> 00:05:01,040
+and also assisting users when filling out
+forms.
+
+65
+00:05:01,140 --> 00:05:03,139
+4. Robust
+
+66
+00:05:03,139 --> 00:05:09,400
+Content must be robust enough that it can
+be interpreted by a wide variety of user agents,
+
+67
+00:05:09,400 --> 00:05:11,219
+including assistive technologies.
+
+68
+00:05:11,219 --> 00:05:15,710
+This is probably the most technical principle.
+
+69
+00:05:15,710 --> 00:05:20,789
+It underlines how important good code is for
+accessibility.
+
+70
+00:05:20,789 --> 00:05:25,990
+If your code is buggy or components are used
+wrongly, the technology used by users might
+
+71
+00:05:25,990 --> 00:05:31,800
+not be able to interpret the information the
+way you and users want them to.
+
+72
+00:05:31,800 --> 00:05:35,000
+Let’s take a look at the Guidelines.
+
+73
+00:05:35,000 --> 00:05:39,879
+The Guidelines are situated underneath the
+principles and give more specific advice for
+
+74
+00:05:39,880 --> 00:05:43,060
+different situations.
+
+75
+00:05:43,060 --> 00:05:47,940
+Principle “1. Perceivable” has four guidelines:
+
+76
+00:05:47,940 --> 00:05:54,349
+1.1 Text Alternatives
+Provide text alternatives for any non-text
+
+77
+00:05:54,349 --> 00:06:02,449
+content so that it can be changed into other
+forms people need, such as large print, braille,
+
+78
+00:06:02,449 --> 00:06:06,580
+speech, symbols or simpler language.
+
+79
+00:06:06,580 --> 00:06:11,090
+Whenever content is on the page that is useful
+or essential for the understanding of the
+
+80
+00:06:11,090 --> 00:06:16,229
+whole page or view, an alternative in text
+form must be provided.
+
+81
+00:06:16,229 --> 00:06:20,289
+That alternative can be used in different
+contexts.
+
+82
+00:06:20,289 --> 00:06:23,580
+1.2 Time-based Media
+
+83
+00:06:23,580 --> 00:06:27,310
+Provide alternatives for time-based media.
+
+84
+00:06:27,310 --> 00:06:32,400
+Time-based media is WCAG language for (mostly)
+audios and videos.
+
+85
+00:06:32,400 --> 00:06:37,539
+Similar to “text alternatives”, this ensures
+that people with different disabilities have
+
+86
+00:06:37,539 --> 00:06:40,110
+access to the media content.
+
+87
+00:06:40,110 --> 00:06:46,249
+For example, this guideline requires captions,
+to enable access for people who cannot hear
+
+88
+00:06:46,249 --> 00:06:53,420
+narration, and audio descriptions, which enable
+access for people who are unable to see a video.
+
+89
+00:06:53,480 --> 00:06:54,720
+1.3 Adaptable
+
+90
+00:06:54,720 --> 00:07:01,580
+Generate [!sic] content that can be presented in different
+ways (for example simpler layout) without
+
+91
+00:07:01,580 --> 00:07:04,460
+losing information or structure.
+
+92
+00:07:04,469 --> 00:07:10,599
+This guideline prepares content to be used
+out of the context or styled and viewed differently.
+
+93
+00:07:10,599 --> 00:07:14,099
+Here’s where semantic markup comes into
+play.
+
+94
+00:07:14,099 --> 00:07:19,419
+It also means allowing users to use their
+devices in any orientation.
+
+95
+00:07:19,419 --> 00:07:22,939
+1.4 Distinguishable
+
+96
+00:07:22,939 --> 00:07:29,960
+Make it easier for users to see and hear content
+including separating foreground from background.
+
+97
+00:07:29,960 --> 00:07:36,409
+Avoid the use of color alone or low contrast
+colors for text, information, and UI elements.
+
+98
+00:07:36,409 --> 00:07:44,320
+Allow resizing of text and changing the viewport,
+for example by implementing a responsive design.
+
+99
+00:07:44,340 --> 00:07:48,860
+The second principle, Operable, has 5 guidelines:
+
+100
+00:07:48,870 --> 00:07:51,770
+2.1 Keyboard Accessible
+
+101
+00:07:51,770 --> 00:07:55,909
+Make all functionality available from a keyboard.
+
+102
+00:07:55,909 --> 00:08:01,650
+This is important as many technologies disabled
+people use are using keyboard commands to
+
+103
+00:08:01,650 --> 00:08:07,909
+navigate around, even as the users are using
+joysticks or other input methods.
+
+104
+00:08:07,909 --> 00:08:10,360
+2.2 Enough Time
+
+105
+00:08:10,360 --> 00:08:15,289
+Provide users enough time to read and use
+content.
+
+106
+00:08:15,289 --> 00:08:21,949
+Avoid introducing arbitrary time limits and
+let users take as much time as they need.
+
+107
+00:08:21,949 --> 00:08:26,479
+If there’s a requirement to restrict the
+time for a certain task — for example for
+
+108
+00:08:26,479 --> 00:08:33,349
+security reasons — the user must be informed
+and given a way to extend the timeout.
+
+109
+00:08:33,349 --> 00:08:37,909
+2.3 Seizures and Physical Reactions
+
+110
+00:08:37,909 --> 00:08:45,110
+Do not design content in a way that is known
+to cause seizures or physical reactions.
+
+111
+00:08:45,110 --> 00:08:48,660
+This guideline targets flashing content and
+motion animation.
+
+112
+00:08:48,660 --> 00:08:54,460
+Note that this guideline was extended to cover
+physical reactions with WCAG 2.1, you might
+
+113
+00:08:54,460 --> 00:09:01,760
+find the old wording, which only talks about
+seizures, occasionally.
+
+114
+00:09:01,760 --> 00:09:04,870
+2.4 Navigable
+
+115
+00:09:04,870 --> 00:09:10,860
+Provide ways to help users navigate, find
+content, and determine where they are.
+
+116
+00:09:10,860 --> 00:09:16,500
+Examples of requirements that come from this
+guideline are the ability to bypass blocks
+
+117
+00:09:16,500 --> 00:09:25,520
+of content on the page, having proper page titles, and
+proper keyboard focus and a visible focus outline.
+
+118
+00:09:25,600 --> 00:09:28,980
+2.5 Input Modalities
+
+119
+00:09:28,990 --> 00:09:35,150
+Make it easier for users to operate functionality
+through various inputs beyond keyboard.
+
+120
+00:09:35,150 --> 00:09:41,920
+New in WCAG 2.1, this guideline expands interaction
+with the page or application when the keyboard
+
+121
+00:09:41,920 --> 00:09:43,699
+is not used.
+
+122
+00:09:43,699 --> 00:09:49,300
+For example, websites and applications must
+provide an alternative to pinch and zoom gestures
+
+123
+00:09:49,300 --> 00:09:53,440
+you would use two fingers or pointers for.
+
+124
+00:09:53,520 --> 00:09:57,580
+Principle 3, Understandable has 3 guidelines:
+
+125
+00:09:57,580 --> 00:10:00,980
+The first one: 3.1 Readable
+
+126
+00:10:00,980 --> 00:10:04,760
+Make text content readable and understandable.
+
+127
+00:10:04,779 --> 00:10:10,430
+This guideline covers languages and language
+transitions, the explanation of unknown words
+
+128
+00:10:10,430 --> 00:10:15,300
+and abbreviations, reading level, and pronunciation.
+
+129
+00:10:15,300 --> 00:10:18,490
+3.2 Predictable
+
+130
+00:10:18,490 --> 00:10:23,300
+Make Web pages appear and operate in predictable
+ways.
+
+131
+00:10:23,300 --> 00:10:28,709
+The guidance in this guideline makes sure
+that users are not surprised by the things
+
+132
+00:10:28,709 --> 00:10:35,570
+that happen on the website and also that common
+elements look the same.
+
+133
+00:10:35,570 --> 00:10:38,500
+3.3 Input Assistance
+
+134
+00:10:38,500 --> 00:10:43,430
+Help users avoid and correct mistakes.
+
+135
+00:10:43,430 --> 00:10:49,470
+This guideline advises to label your form
+fields in a useful way, identify errors and
+
+136
+00:10:49,470 --> 00:10:55,460
+provide suggestions on how to prevent errors
+in the first place.
+
+137
+00:10:55,520 --> 00:11:00,260
+The last principle, Robust, has only one guideline:
+
+138
+00:11:00,269 --> 00:11:03,290
+4.1 Compatible
+
+139
+00:11:03,290 --> 00:11:10,560
+Maximize compatibility with current and future
+user agents, including assistive technologies.
+
+140
+00:11:10,560 --> 00:11:16,320
+Write conforming HTML code, make sure that
+the names, roles, and statuses of UI elements
+
+141
+00:11:16,320 --> 00:11:17,580
+are clear.
+
+142
+00:11:17,740 --> 00:11:23,880
+I won’t go into success criteria this time
+— subscribe and click the bell to get a
+
+143
+00:11:23,889 --> 00:11:29,699
+notification when I do — but remember that
+these build the ruleset to see if you have
+
+144
+00:11:29,699 --> 00:11:33,320
+met the minimum requirements of the guidelines.
+
+145
+00:11:33,320 --> 00:11:36,840
+You should always aim to exceed these success
+criteria.
+
+146
+00:11:36,980 --> 00:11:42,020
+When you come across WCAG, you will quickly
+stumble over techniques and understanding
+
+147
+00:11:42,020 --> 00:11:43,339
+documents.
+
+148
+00:11:43,339 --> 00:11:46,110
+They are linked right from the specification!
+
+149
+00:11:46,110 --> 00:11:50,620
+Note that those documents are non-normative
+documents, they can help you to understand
+
+150
+00:11:50,620 --> 00:11:55,360
+WCAG but their guidance does not necessary
+mean you meet WCAG.
+
+151
+00:11:55,360 --> 00:12:00,529
+The techniques are a collection of examples
+of how to meet a success criterion, either
+
+152
+00:12:00,529 --> 00:12:05,620
+narrowly — WCAG calls this “sufficient
+technique” — or as a best practice.
+
+153
+00:12:05,620 --> 00:12:08,790
+WCAG calls this an “advisory technique”.
+
+154
+00:12:08,790 --> 00:12:14,320
+Let’s talk about “Conformance” & “Conformance
+Levels”
+
+155
+00:12:14,329 --> 00:12:19,790
+These phrases are often used when people talk
+about web accessibility, especially in association
+
+156
+00:12:19,790 --> 00:12:23,050
+with WCAG and lawsuits.
+
+157
+00:12:23,050 --> 00:12:28,280
+Conformance determines that the website follows
+all guidelines in WCAG and all applicable
+
+158
+00:12:28,280 --> 00:12:30,360
+success criteria are met.
+
+159
+00:12:30,360 --> 00:12:36,060
+It is usually used in the testing process
+to have something “firm” or absolute to
+
+160
+00:12:36,060 --> 00:12:37,440
+test against.
+
+161
+00:12:37,440 --> 00:12:40,500
+However, there’s always some room for interpretation.
+
+162
+00:12:42,940 --> 00:12:48,560
+WCAG success criteria can have one of three
+levels — A, Double-A and Triple-A — and to
+
+163
+00:12:48,560 --> 00:12:55,280
+reach that conformance non of your page can
+violate any success criteria at that level.
+
+164
+00:12:55,280 --> 00:12:59,820
+The lowest level, A, ensures basic accessibility.
+
+165
+00:12:59,830 --> 00:13:06,019
+If you reach this level, you are not actively
+excluding most disabled people.
+
+166
+00:13:06,019 --> 00:13:12,649
+The second level, Double-A, ensures accessibility
+for most people with disabilities.
+
+167
+00:13:12,649 --> 00:13:17,319
+This is the level most laws and policies demand.
+
+168
+00:13:17,320 --> 00:13:22,239
+To reach it, you need to confirm to all success
+criteria that are level A and Double-A.
+
+169
+00:13:22,240 --> 00:13:27,480
+The third level, Triple-A, are what I call
+“stretch goals”.
+
+170
+00:13:27,480 --> 00:13:32,810
+These are either niche or otherwise hard to
+achieve. But depending on your website it can
+
+171
+00:13:32,810 --> 00:13:37,760
+make a lot of sense to offer features that
+fall into this conformance level.
+
+172
+00:13:37,780 --> 00:13:45,100
+So, that was an overview on the principles
+and guidelines of WCAG as well as a look into conformance.
+
+173
+00:13:45,140 --> 00:13:50,200
+Stay tuned to learn more on different success
+criteria and generally about web accessibility
+
+174
+00:13:50,200 --> 00:13:51,860
+on my channel.
+
+175
+00:13:51,860 --> 00:13:56,180
+Make sure to click subscribe and hit the bell
+icon to not miss anything.
+
+176
+00:13:56,180 --> 00:14:03,600
+And of course you can support me on Patreon
+at patreon.com/yatil or follow me at twitter.com/yatil.
+
+177
+00:14:03,600 --> 00:14:06,220
+That’s Y - A - T - I - L.
+
+178
+00:14:06,480 --> 00:14:08,480
+Thank you for watching.
+
